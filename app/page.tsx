@@ -1508,6 +1508,17 @@ ${data.get("message")}`;
   font-size: 18px;
   outline: none;
 }
+  .contact-form select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #0b241b !important;
+  color: white !important;
+}
+
+.contact-form select option {
+  background-color: #0b241b;
+  color: white;
+}
 
 .contact-form input,
 .contact-form select {
