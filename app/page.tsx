@@ -1550,19 +1550,21 @@ border: 1px solid rgba(139, 92, 246, 0.35);
 .contact-form button {
   width: 100%;
   min-height: 95px;
-  border: none;
+  border: 1px solid rgba(139, 92, 246, 0.7);
   border-radius: 18px;
-  background: #61e3a5;
-  color: #071b13;
+  background: linear-gradient(135deg, #8B5CF6, #6D28D9);
+  color: white;
   font-size: 20px;
   font-weight: 700;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: all 0.35s ease;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.25);
 }
 
 .contact-form button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(97, 227, 165, 0.2);
+  background: linear-gradient(135deg, #00E5FF, #8B5CF6);
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.55);
 }
 
 @media (max-width: 600px) {
