@@ -540,7 +540,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="contact-section section-reveal" id="contact">
+             <section className="contact-section section-reveal" id="contact"> 
             <div className="section-index">05 — ET MAINTENANT ?</div>
 
             <p className="eyebrow">LET'S CREATE SOMETHING</p>
@@ -554,6 +554,61 @@ export default function Home() {
               Une collaboration, une question ou un projet numérique ?
               Je serai ravi d'échanger avec vous.
             </p>
+<form
+  className="contact-form"
+  onSubmit={(e) => {
+    e.preventDefault();
+
+    const data = new FormData(e.currentTarget);
+
+    const message = `NOUVEAU CONTACT - PORTFOLIO ALLOUAN ARIEL
+
+Nom : ${data.get("name")}
+Email : ${data.get("email")}
+Sujet : ${data.get("subject")}
+
+Message :
+${data.get("message")}`;
+
+    const url = `https://wa.me/2250576338023?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank", "noopener,noreferrer");
+  }}
+>
+  <input
+    type="text"
+    name="name"
+    placeholder="Votre nom complet"
+    required
+  />
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Votre adresse e-mail"
+    required
+  />
+
+  <select name="subject" required>
+    <option value="">Choisir un sujet</option>
+    <option value="Création de site web">Création de site web</option>
+    <option value="Application mobile">Application mobile</option>
+    <option value="Collaboration">Collaboration</option>
+    <option value="Autre demande">Autre demande</option>
+  </select>
+
+  <textarea
+    name="message"
+    placeholder="Décrivez votre projet ou votre demande..."
+    rows={5}
+    required
+  />
+
+  <button type="submit">
+    Envoyer sur WhatsApp ↗️
+  </button>
+</form>
+
 
             <a
               className="contact-button"
@@ -566,9 +621,9 @@ export default function Home() {
 
             <a
               className="email-link"
-              href="mailto:allouanariel@gmail.com"
+              href="mailto:allouanariel8@gmail.com"
             >
-              allouanariel@gmail.com
+              allouanariel8@gmail.com
             </a>
           </section>
 
