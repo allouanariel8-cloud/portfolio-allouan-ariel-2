@@ -641,11 +641,13 @@ ${data.get("message")}`;
         @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700;800&display=swap");
 
         :root {
-          --green: #5dffad;
-          --green-light: #a1ffd0;
-          --dark: #030907;
-          --muted: rgba(230, 255, 241, 0.58);
-        }
+  --green: #00E5FF;
+  --green-light: #8B5CF6;
+  --dark: #080D18;
+  --muted: rgba(230, 240, 255, 0.65);
+  --purple: #8B5CF6;
+  --cyan: #00E5FF;
+}
 
         * {
           box-sizing: border-box;
