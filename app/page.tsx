@@ -1489,8 +1489,8 @@ ${data.get("message")}`;
   display: flex;
   flex-direction: column;
   gap: 26px;
-  background: rgba(12, 42, 31, 0.82);
-  border: 1px solid rgba(95, 225, 165, 0.25);
+  background: rgba(8, 13, 24, 0.92);
+border: 1px solid rgba(139, 92, 246, 0.35);
   border-radius: 32px;
 }
 
@@ -1500,8 +1500,8 @@ ${data.get("message")}`;
   width: 100%;
   box-sizing: border-box;
   padding: 25px 30px;
-  background: rgba(5, 25, 19, 0.75);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(8, 13, 24, 0.85);
+  border: 1px solid rgba(139, 92, 246, 0.35);
   border-radius: 18px;
   color: white;
   font: inherit;
